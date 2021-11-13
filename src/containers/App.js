@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import Random from '../components/Random';
 import './App.css';
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <div className='tc'>
           <h1 className='f1'>RoboFriends</h1>
           <SearchBox searchChange={onSearchChange}/>
+          <Random className='f1'/>
           <Scroll>
             <CardList robots={filteredRobots} />
           </Scroll>
